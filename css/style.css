@@ -1,0 +1,249 @@
+:root {
+    --bg: #f5f4d6;
+    --blue: #1e88e5;
+    --btn: #4f77a8;
+    --btn-dark: #3f628e
+}
+
+body {
+    background: var(--bg);
+    font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+    color: #222
+}
+
+.layout {
+    display: flex;
+    min-height: 100vh
+}
+
+.sidebar {
+    width: 250px;
+    flex-shrink: 0;
+    border-right: 3px solid var(--blue);
+    padding: 16px 18px;
+    display: flex;
+    flex-direction: column
+}
+
+.brand {
+    font-family: Georgia, "Noto Serif", serif;
+    font-weight: 700;
+    font-size: 1.7rem;
+    color: var(--blue);
+    line-height: 1
+}
+
+.brand-sub {
+    font-size: .85rem;
+    margin: 2px 0 28px
+}
+
+.nav-btn {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border: 2px solid #333;
+    background: #d9d9d9;
+    border-radius: 6px;
+    padding: 9px 12px;
+    color: #111;
+    text-decoration: none;
+    font-size: .8rem;
+    margin-bottom: 20px
+}
+
+.nav-btn i {
+    font-size: 1.2rem
+}
+
+.nav-btn:hover {
+    background: #cfcfcf;
+    color: #000
+}
+
+.nav-btn.active {
+    background: var(--btn);
+    color: #fff;
+    border-color: #2c4a73
+}
+
+.main {
+    flex: 1;
+    padding: 24px 32px;
+    min-width: 0
+}
+
+.page-title {
+    font-family: Georgia, "Noto Serif", serif;
+    font-size: 1.6rem;
+    margin: 0
+}
+
+.subtitle {
+    font-size: .75rem;
+    color: #777;
+    margin-bottom: 18px
+}
+
+.panel {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 6px
+}
+
+.btn-roomly {
+    background: var(--btn);
+    color: #fff;
+    border: 0;
+    font-size: .8rem
+}
+
+.reservation-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 8px
+}
+
+.reservation-actions .btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    white-space: nowrap
+}
+
+.btn-roomly:hover,
+.btn-roomly:focus {
+    background: var(--btn-dark);
+    color: #fff
+}
+
+.btn-roomly:disabled {
+    background: #9db3cf;
+    color: #fff
+}
+
+.btn-light-w {
+    background: #fff;
+    border: 1px solid #ccc;
+    font-size: .8rem
+}
+
+.table {
+    font-size: .78rem;
+    margin: 0
+}
+
+.table thead th {
+    background: #e6e6e6;
+    font-size: .72rem;
+    border: 0;
+    padding: 12px
+}
+
+.table td {
+    padding: 12px;
+    vertical-align: middle
+}
+
+.badge-s {
+    display: inline-block;
+    font-size: .65rem;
+    border: 1px solid #ccc;
+    background: #f1f1f1;
+    padding: 2px 8px;
+    border-radius: 4px
+}
+
+.badge-s.off {
+    background: #e3e3e3
+}
+
+.room-card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 18px;
+    height: 100%
+}
+
+.room-card h6 {
+    font-weight: 700;
+    margin: 0 0 6px
+}
+
+.room-card .meta {
+    font-size: .78rem;
+    color: #444;
+    margin: 6px 0
+}
+
+.room-card .sched {
+    border-top: 1px solid #ddd;
+    margin-top: 14px;
+    padding-top: 12px;
+    font-size: .78rem
+}
+
+.room-card .note {
+    font-size: .72rem;
+    color: #777
+}
+
+.form-label {
+    font-size: .78rem;
+    font-weight: 600;
+    margin-bottom: 4px
+}
+
+.form-control,
+.form-select {
+    font-size: .8rem
+}
+
+.stat {
+    background: #fff;
+    padding: 12px 18px;
+    min-width: 180px;
+    font-size: .78rem
+}
+
+.stat b {
+    display: block;
+    font-size: 1rem;
+    font-weight: 500;
+    margin-top: 4px
+}
+
+@media(max-width:768px) {
+    .layout {
+        flex-direction: column
+    }
+
+    .sidebar {
+        width: 100%;
+        border-right: 0;
+        border-bottom: 3px solid var(--blue)
+    }
+
+    .nav-btn {
+        margin-bottom: 10px
+    }
+
+    .main {
+        padding: 18px 14px
+    }
+}
+.reservation-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 8px
+}
+
+.reservation-actions .btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    white-space: nowrap
+}

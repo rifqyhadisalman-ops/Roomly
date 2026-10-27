@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Laporan | Roomly</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body data-page="laporan">
+    <div class="layout">
+        <aside id="sidebar"></aside>
+        <main class="main">
+            <h1 class="page-title">Laporan</h1>
+            <div class="subtitle">Ringkasan penggunaan ruang belajar oleh Alya Putri</div>
+            <label class="form-label">Periode</label>
+            <div class="d-flex gap-2 mb-3" style="max-width:420px"><input type="date"
+                    class="form-control border-0"><button class="btn btn-roomly text-nowrap">Tampilkan Rekap</button>
+            </div>
+            <div class="d-flex gap-3 mb-3 flex-wrap">
+                <div class="stat">Total Reservasi<b>2 Reservasi</b></div>
+                <div class="stat">Durasi<b>2 Jam</b></div>
+            </div>
+            <div class="panel table-responsive" style="max-width:780px">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Nama ruang</th>
+                            <th>Tanggal</th>
+                            <th>Waktu</th>
+                            <th>Durasi</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Ruang PES 701</td>
+                            <td>08 Okt 2026</td>
+                            <td>09.00–11.00</td>
+                            <td>2 jam</td>
+                            <td><span class="badge-s">Selesai</span></td>
+                        </tr>
+                        <tr>
+                            <td>Ruang PES 702</td>
+                            <td>05 Okt 2026</td>
+                            <td>13.00–15.00</td>
+                            <td>2 jam</td>
+                            <td><span class="badge-s">Selesai</span></td>
+                        </tr>
+                        <tr>
+                            <td>Ruang TA 11.4</td>
+                            <td>02 Okt 2026</td>
+                            <td>10.00–12.00</td>
+                            <td>2 jam</td>
+                            <td><span class="badge-s">Selesai</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </main>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>
